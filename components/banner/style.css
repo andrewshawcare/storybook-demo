@@ -1,0 +1,27 @@
+.banner {
+  align-content: center;
+  align-items: center;
+  background-color: #D05382;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.banner > * {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.banner .message {
+  font-size: 1.5rem;
+}
+
+.banner .action {
+  color: white;
+  text-decoration: none;
+  background-color: #387FC4;
+  padding: 1rem;
+}

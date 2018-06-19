@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "prebuild": "npm run test:generate-output",
+    "build": "build-storybook --config-dir .storybook --output-dir .out",
+    "export": "story2sketch",
+    "prestart": "npm run test:generate-output",
+    "start": "concurrently --kill-others \"npm run test:generate-output -- --watch\" \"start-storybook --config-dir .storybook --port 9001\"",
+    "test": "jest",
+    "test:generate-output": "jest --json --outputFile=.test-results.json"
+  },
+  "dependencies": {
+    "@storybook/addon-actions": "v4.0.0-alpha.9",
+    "@storybook/addon-jest": "v4.0.0-alpha.9",
+    "@storybook/addon-knobs": "v4.0.0-alpha.9",
+    "@storybook/addon-notes": "v4.0.0-alpha.9",
+    "@storybook/html": "v4.0.0-alpha.9",
+    "babel-core": "*",
+    "babel-jest": "*",
+    "concurrently": "*",
+    "jest": "*",
+    "react": "*",
+    "react-dom": "*",
+    "story2sketch": "*"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^.+\\.css": "<rootDir>/style-mock.js"
+    }
+  }
+}

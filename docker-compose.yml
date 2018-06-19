@@ -1,0 +1,10 @@
+version: '3'
+services:
+  storybook:
+    build: .
+    ports:
+      - 9001:9001
+    volumes:
+      - ./package.json:/usr/src/app/package.json
+      - ./.storybook:/usr/src/app/.storybook
+      - ./components:/usr/src/app/components
