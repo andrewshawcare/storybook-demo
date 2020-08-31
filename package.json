@@ -11,7 +11,7 @@
   "dependencies": {
     "@storybook/addon-actions": "v4.0.0-alpha.9",
     "@storybook/addon-jest": "v4.0.0-alpha.9",
-    "@storybook/addon-knobs": "v4.0.0-alpha.9",
+    "@storybook/addon-knobs": "v6.0.21",
     "@storybook/addon-notes": "v4.0.0-alpha.9",
     "@storybook/html": "v4.0.0-alpha.9",
     "babel-core": "*",
