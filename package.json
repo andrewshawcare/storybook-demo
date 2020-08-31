@@ -9,7 +9,7 @@
     "test:generate-output": "jest --json --outputFile=.test-results.json"
   },
   "dependencies": {
-    "@storybook/addon-actions": "v4.0.0-alpha.9",
+    "@storybook/addon-actions": "v6.0.21",
     "@storybook/addon-jest": "v4.0.0-alpha.9",
     "@storybook/addon-knobs": "v4.0.0-alpha.9",
     "@storybook/addon-notes": "v4.0.0-alpha.9",
